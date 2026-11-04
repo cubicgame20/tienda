@@ -1,18 +1,18 @@
 body {
         font-family: Arial, sans-serif;
         margin: 0;
-        background: #f5f3f4;
+        background: #f0d8e4;
 }
 
 nav {
         display: flex;
         gap: 20px;
         padding: 16px 32px;
-        background: #c3002f;
+        background: #47221f;
 }
 
 nav a {
-        color: white;
+        color: rgb(255, 255, 255);
         text-decoration: none;
         font-weight: bold;
 }
@@ -23,6 +23,7 @@ nav a.activo {
 
 a{
         text-decoration: none;
+        color: #47221f;
 }
 
 main {
@@ -41,10 +42,15 @@ main {
 }
 
 button {
-        background: #c3002f;
+        background: #47221f;
         color: white;
         border: none;
         padding: 8px 14px;
         border-radius: 6px;
         cursor: pointer;
+}
+
+h2
+{
+        color: #47221f;
 }

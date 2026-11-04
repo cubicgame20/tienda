@@ -11,14 +11,17 @@ export interface Producto {
 // providedIn: 'root' significa que Angular crea UNA sola instancia para toda la app.
 @Injectable({ providedIn: 'root' })
 export class ProductosService {
-  private productos: Producto[] = [
+  public productos: Producto[] = [
     { id: 1, nombre: 'Teclado', precio: 80000 },
     { id: 2, nombre: 'Mouse', precio: 45000 },
     { id: 3, nombre: 'Audífonos', precio: 120000 },
+    { id: 4, nombre: 'Monitor', precio: 400000 },
   ];
 
   // signal: un valor que avisa a la pantalla cuando cambia.
-  carrito = signal<Producto[]>([]);
+  carrito = signal<Producto[]>([]); 
+  // el carrito es un signal que guarda un array(lista) de productos.
+
 
   // computed: un valor calculado a partir de signals.
   // Angular lo recalcula solo cuando cambia el carrito.
