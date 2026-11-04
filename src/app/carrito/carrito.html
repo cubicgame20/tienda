@@ -1,0 +1,14 @@
+<!-- PASO 8: esta página lee el mismo signal "carrito" del servicio. -->
+<h2>Carrito</h2>
+@if (servicio.carrito().length === 0) {
+  <p>El carrito está vacío.</p>
+} @else {
+  <!-- @for repite el contenido; $index es la posición de cada elemento. -->
+  @for (p of servicio.carrito(); track $index) {
+    <div class="card">
+      <span>{{ p.nombre }} — $ {{ p.precio.toLocaleString('es-CO') }}</span>
+      <button (click)="servicio.quitar($index)">Quitar</button>
+    </div>
+  }
+  <p><b>Total: $ {{ servicio.total().toLocaleString('es-CO') }}</b></p>
+}

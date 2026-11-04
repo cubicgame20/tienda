@@ -1,0 +1,10 @@
+<h2>Productos</h2>
+<!-- @for crea una tarjeta por cada producto. -->
+@for (p of productos; track p.id) {
+  <div class="card">
+    <!-- {{ }} muestra un valor de TypeScript en el HTML. -->
+    <span>{{ p.nombre }} — $ {{ p.precio.toLocaleString('es-CO') }}</span>
+    <!-- PASO 6: (click) ejecuta código de TypeScript cuando se pulsa el botón. -->
+    <button (click)="servicio.agregar(p)">Agregar</button>
+  </div>
+}

@@ -1,0 +1,50 @@
+body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background: #f5f3f4;
+}
+
+nav {
+        display: flex;
+        gap: 20px;
+        padding: 16px 32px;
+        background: #c3002f;
+}
+
+nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+}
+
+nav a.activo {
+        text-decoration: none;
+}
+
+a{
+        text-decoration: none;
+}
+
+main {
+        padding: 32px;
+}
+
+.card {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: white;
+        padding: 16px;
+        margin-bottom: 12px;
+        border-radius: 8px;
+        max-width: 420px;
+}
+
+button {
+        background: #c3002f;
+        color: white;
+        border: none;
+        padding: 8px 14px;
+        border-radius: 6px;
+        cursor: pointer;
+}

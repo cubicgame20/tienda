@@ -1,0 +1,13 @@
+<!-- El menú está aquí, por eso se ve en todas las páginas. -->
+<nav>
+  <a routerLink="/inicio" routerLinkActive="activo">Inicio</a>
+  <a routerLink="/productos" routerLinkActive="activo">Productos</a>
+  <a routerLink="/carrito" routerLinkActive="activo">
+    Carrito ({{ servicio.carrito().length }})
+  </a>
+</nav>
+
+<main>
+  <!-- PASO 4: aquí aparece la página que corresponde a la URL. -->
+  <router-outlet />
+</main>
