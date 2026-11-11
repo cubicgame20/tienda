@@ -11,11 +11,13 @@ export interface Producto {
 // providedIn: 'root' significa que Angular crea UNA sola instancia para toda la app.
 @Injectable({ providedIn: 'root' })
 export class ProductosService {
-  public productos: Producto[] = [
+  private productos: Producto[] = [
     { id: 1, nombre: 'Teclado', precio: 80000 },
     { id: 2, nombre: 'Mouse', precio: 45000 },
     { id: 3, nombre: 'Audífonos', precio: 120000 },
     { id: 4, nombre: 'Monitor', precio: 400000 },
+    { id: 5, nombre: 'Parlantes', precio: 150000 },
+
   ];
 
   // signal: un valor que avisa a la pantalla cuando cambia.

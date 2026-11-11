@@ -3,7 +3,7 @@
   <a routerLink="/inicio" routerLinkActive="activo">Inicio</a>
   <a routerLink="/productos" routerLinkActive="activo">Productos</a>
   <a routerLink="/carrito" routerLinkActive="activo">
-    Carrito ({{ servicio.carrito().length }})
+    Carrito ({{ servicio.carrito().length }}) <!-- PASO 3: el servicio CarritoService tiene un método carrito() que devuelve un array con los productos que hay en el carrito. -->
   </a>
 </nav>
 
